@@ -43,7 +43,7 @@ app = FastAPI(title="TalentAegis Bio-Neural Engine", version="1.2.0 (Batch Editi
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"], 
+    allow_origins=["*"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
